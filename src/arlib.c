@@ -67,6 +67,15 @@ char asciitoc(int c){
     return a;
 }
 
+int arr(int *arr, int size){
+    int i;
+    for(i=0;i<size;i++){
+        printf("Enter the %d element of the array: ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    return 0;
+}
+
 
 
 

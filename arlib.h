@@ -25,5 +25,7 @@ char takechar(const char *prompt);
 
 char asciitoc(int c);
 
+int arr(int *arr, int size);
+
 
 #endif
