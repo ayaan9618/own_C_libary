@@ -16,6 +16,7 @@ double divi( double i, double j );
 
 int mod( int i, int j );
 
+
 int takeint(const char *prompt);
 
 float takefloat(const char *prompt);
