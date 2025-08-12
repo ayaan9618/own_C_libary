@@ -3,15 +3,26 @@
 #include <arlib.h>
  
 int main(void) {
-  printf("Hello, World!\n");
+double x = takefloat("Enter first number: ");
+double y = takefloat("Enter second number: ");
 
-  int arr[5];
-  int size = sizeof(arr) / sizeof(arr[0]);
+printf("Add: %.2lf\n", add(x, y));
+printf("Sub: %.2lf\n", sub(x, y));
+printf("Mul: %.2lf\n", mul(x, y));
+printf("Div: %.2lf\n", divi(x, y));
 
-  for (int i = 0; i < size; i++)
-  {
-    printf("arr[%d] = %d\n", i, arr[i]);
-  }
-  
-   
-}
+int m = takeint("Enter integer for modulo: ");
+int n = takeint("Enter second integer for modulo: ");
+printf("Mod: %d\n", mod(m, n));
+
+char ch = takechar("Enter a character: ");
+printf("Character entered: %c (ASCII: %d)\n", ch, ch);
+
+int code = takeint("Enter ASCII code (0-127): ");
+printf("ASCII %d = '%c'\n", code, asciitoc(code));
+
+int size = takeint("Enter size of array: ");
+int numbers[size];
+arr(numbers, size);
+
+}}
